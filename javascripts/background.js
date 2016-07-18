@@ -2,9 +2,9 @@
 
 var yOffset = 0.0;  // 2nd dimension of perlin noise
 function setup() {
-  var canvas = createCanvas(displayWidth, displayHeight / 10 );
+  var canvas = createCanvas(displayWidth, 0.08 * displayHeight);
   var x = 0;
-  var y = 9 * displayHeight / 10 ;
+  var y = 0.8 * displayHeight;
   canvas.position(x, y);
 }
 
