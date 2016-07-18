@@ -2,8 +2,9 @@
 
 var yOffset = 0.0;  // 2nd dimension of perlin noise
 function setup() {
-  // Don't draw if on mobile (quick and dirty check)
+  // Don't reposition if on mobile (quick and dirty check)
   if (displayHeight > displayWidth || displayHeight < 900) {
+    var canvas = createCanvas(displayWidth, 0.08 * displayHeight);
     return;
   }
   var canvas = createCanvas(displayWidth, 0.08 * displayHeight);
@@ -15,7 +16,6 @@ function setup() {
 function draw() {
   background(255);
   fill(230);
-  // noFill();
   noStroke();
   beginShape();
 
