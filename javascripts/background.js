@@ -3,11 +3,14 @@
 var yOffset = 0.0;  // 2nd dimension of perlin noise
 function setup() {
   // Don't reposition if on mobile (quick and dirty check)
-  if (displayHeight > displayWidth || displayHeight < 900) {
-    var canvas = createCanvas(displayWidth, 0.08 * displayHeight);
+  if (displayHeight > displayWidth || displayHeight < 720) {
+    var canvas = createCanvas(windowWidth, 0.1 * windowHeight);
     return;
   }
-  var canvas = createCanvas(displayWidth, 0.08 * displayHeight);
+  // NEED TO GET JQUERY :(
+  var viewableOffset = $("#div.wave").offset();
+  console.log(viewableOffset);
+  var canvas = createCanvas(windowWidth, 0.095 * windowHeight);
   var x = 0;
   var y = 0.8 * displayHeight;
   canvas.position(x, y);
@@ -15,14 +18,14 @@ function setup() {
 
 function draw() {
   background(255);
-  fill(230);
   noStroke();
   beginShape();
+  fill(230);
 
   var xOffset = 0;
   // Iterate over horizontal pixels
   for (var x = 0; x <= windowWidth; x += 10) {
-    var y = map(noise(xOffset, yOffset), 0, 1, 0, 75);
+    var y = map(noise(xOffset, yOffset), 0, 1, 0, windowHeight / 15);
     // Set the vertex
     vertex(x, y);
     // Increment x
