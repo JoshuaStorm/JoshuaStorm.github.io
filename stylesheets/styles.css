@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 h1, h2, h3 {
@@ -77,6 +77,8 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  margin:0 0 10px;
+  border-bottom:4px solid
 }
 
 h2 {
@@ -108,7 +110,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:960px;
   margin:0 auto;
 }
 
@@ -224,7 +226,7 @@ header ul a strong {
 }
 
 section {
-  width:600px;
+  width:650px;
   float:right;
   padding-bottom:20px;
   border-bottom: 1px solid;
