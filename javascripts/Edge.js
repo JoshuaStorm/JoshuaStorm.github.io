@@ -9,7 +9,6 @@ const TOP = 0;
 const LEFT = 1;
 const BOTTOM = 2;
 const RIGHT = 3;
-const RESOLUTION_MULTIPLIER = 1;
 
 class Square {
     constructor(topLeft, sideLength) {
@@ -75,17 +74,18 @@ function drawPointFromTo(sqr1, sqr2) {
 }
 
 function setup() {
-    var canvasWidth = RESOLUTION_MULTIPLIER * displayWidth / 4;
-    var canvasHeight = RESOLUTION_MULTIPLIER * displayHeight / 6;
+    let canvasDiv = document.getElementById("canvasDiv");
+    var canvasWidth = canvasDiv.clientWidth * 1.0;
+    var canvasHeight = displayHeight / 6;
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent("canvasDiv")
     background(232);
     // noFill();
     LEFT_X = canvasWidth / 4;
-    CENTER_Y = (canvasWidth / 4) - (canvasHeight / 2);
     BUFFER = canvasWidth / 16;
     SIZE = canvasWidth / 4;
+    CENTER_Y = (canvasHeight / 2) - SIZE / 2;
     ITERATIONS = 600;
 
     var point1 = new Point(BUFFER, CENTER_Y);
