@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pick your own Placebo</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Joshua Storm Becker</h1>
+        <p class="view"><a href="http://becker.codes/blog.html">Blog Home</a> </p>
+        <p class="view"><a href="mailto:josh@becker.codes">Email</a> </p>
+      </header>
+      <section>
+        <h3>Pick your own Placebo</h3>
+          
+        <div id="canvasDiv"></div>        
+        <script src="../libraries/p5.js" type="text/javascript"></script>
+        <script src="../javascripts/Oscillate.js" type="text/javascript"></script>
+
+<p>
+  <i>Disclaimer: this post discusses nutrition and diet, if you are sensitive to those sorts of discussions, consider reading something else. Further, I have 
+    no credentials as a medical expert, nutritionist, dietician, or otherwise. What's discussed in this post should not be miscontrued as medical advice.
+  </i>
+</p>
+
+<p>
+  One of my more eccentric pass times is reading the latest nutrition papers. I think it is the urge to optimize that leads me to 
+  trying to sift through nutritional data to find the signal in the noise. And there is a lot of noise. Nutrition seems to be a difficult 
+  science to pin down, the number of variables involved is simply too vast, resulting in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785474/">poor reproducibility</a> that rivals the social sciences.
+  To make matters worse, <a href="https://www.theguardian.com/lifeandstyle/2016/dec/12/studies-health-nutrition-sugar-coca-cola-marion-nestle">industry funded articles have historically 
+  led the public astray</a>.
+  <br><br>
+  Despite this, I have found I am able to convince myself that there is enough signal to put together a useful personal framework for managing my own nutrition. In most cases,
+  I wouldn't be willing to give <i>advice</i> based on that personal framework, but there are a few things I am confident enough in to aspouse as though they are fact:
+
+  <ol>
+    <li>Western diets are lacking in <a href="https://pubmed.ncbi.nlm.nih.gov/29566200/">dietary fiber</a>.</li>
+    <li>Western diets overconsumption of <i>saturated</i> fat and/or <i>refined</i> carbohydrates is <a href=""></a> major factor in the rise of <a href="https://pubmed.ncbi.nlm.nih.gov/29174025/">cardiovascular disease</a> (<a href="https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm">our number 1 killer</a> and <a href="https://www.nimh.nih.gov/health/statistics/disability/us-leading-categories-of-diseases-disorders.shtml">2nd leading cause of disability</a>).</li>
+    <li>Placebos work and we should all be taking them.</lib>
+  </ol>
+
+  If you find yourself thinking those three claims are all non-controversial, there are a surprising number of modern studies to the contrary. For just one example, here is one article to the contrary of point (2) <a href="https://www.mdpi.com/2072-6643/11/9/2200/htm">article</a>.
+  Sure, one of the authors on the paper is the National Dairy Council, but it's published in a real academic journal nevertheless. I will spare the reader from trying to convince them of the first two and focus on the claim (3).
+  <br><br>
+  Placebos do in fact work. That is to say, the belief that something will help does in fact help independent of the underlying physiological effects of a treatment. This effect has been known for at least <a href="https://pubmed.ncbi.nlm.nih.gov/23497809/">a couple hundred years</a> and 
+  has been a <a href="https://pubmed.ncbi.nlm.nih.gov/7046551/">well-accepted fact in medical practice for much of modern medicine</a>. The question then becomes, <i>how much</i> of an effect is there? The answer seems to be, <a href="https://doi.org/10.1016/j.jpsychores.2007.11.007">it depends</a>.
+  This is a massive problem in the scientific world, how can we begin to measure the effects of drugs if our only control baseline is the placebo effect and the placebo effect varies not only depending on minute details such as the name of the placebo, but the effect varies
+  between person to person? Fortunately, we don't live solely in the scientific world. All that matters to us is that they do work, even if the magnitude of the effect varies.
+  They even work when <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5841659/">we know our treatment is mearly a placebo, and they work even better when we are told placebos are effective</a>.
+  <br><br>
+  So, placebos work. They have been shown to work on a variety of ailments. So what? So, why aren't we all taking them? For one, there is social stigma. To take a placebo, socially, is very similar to subscribing to 
+  homeopathy. If you find yourself in very materialist social circles (I'm looking at you, software engineers), you will certainly get some strange looks when you add ashwagandha root powder to your meal, even after 
+  explaining it's for the placebo.
+  <br><br>
+  And to be clear, there is some risk. Namely, that the placebo we choose to take could have some physiological deleterious effects. 
+  One somewhat common homeopathic remedy/supplement I have seen espoused is coconut oil, which I am convinced is in fact deleterious for the majority of those consuming Western diets. 
+  Ironically, in the past studies have used <a href="https://www.reuters.com/article/us-whats-placebo-idUSTRE69H51L20101018">lactose sugar</a> for their placebo pills, a placebo that <a href="https://www.ncbi.nlm.nih.gov/books/NBK532285/">65% of the world population is 
+  intolerant to</a>. Further, there is risk for those who are prone to falling into delusional states believing their chosen placebo is truly more than just that. 
+  <br><br>
+  So, I follow a three step approach to picking a placebo. 
+  <ol>
+    <li>Convenience: I find a cheap, easily consumable compound or easily performable action.</li>
+    <li>Scientific: I validate the compound/action has a long history of human use and research indicates at worst the compound/action is physiologically non-harmful.</li>
+    <li>Spiritually (for lack of better term): I thoroughly convince myself that the compound/action has the potential to improve my life in some dimension.</li>
+  </ol>
+  
+  (3) is key, and what I think most would struggle with. But you need not believe that your chosen placebo will <i>fundamentally</i> change your life, it won't, you simply need to believe 
+  it will be a net positive. So, if you struggle with spiritual thinking, I suggest you return to the data and convince yourself that way that a placebo would have <i>some</i> positive impact. You can also pick
+  compounds which are more likely to be beneficial, such as <a href="https://www.sciencedirect.com/science/article/abs/pii/S0271531718301386">turmeric</a> (although, be <a href="https://news.stanford.edu/2019/09/24/lead-found-turmeric/">careful with your source</a>).
+  <br><br>
+  I also cycle my placebos, which serves two purposes: one, it is a hedge in case one of my chosen placebos does actually cause some physiological harm from long-term consumption; two, it acts as a refresher, as I am more likely to 
+  believe something is improving my life when it is novel.
+  <br><br>
+  Of course, this mindset is generalizable to non-placebos as well, which may be the real lesson I am trying to internalize.
+  
+</p>
+ <!-- Below is an example for a password protected blog -->
+Password: <input type="text" id="textBox" name="textBox" onchange="displayResult()" > Hint: two words, animal
+<p id="passwordProtectedBlogContent">
+</p>
+<script src="../javascripts/WeakPasswordSystem.js"></script>
+<script>
+  var originalText = "%3C%06%0CB%0EFI%1A%1D%16H%0A%03%15A%05%17%06%07%1BI%04%0ERI%1A%1D%1A%1BI%16%09I%07%05%1C%1D%0FI%15%00SI%03%0CS%18%0C%10%12O%07%0F%19S%0D%11%12%04R%00%03%10%1D%1C%08%16%08O%07N%02%1A%1C%01B%11S%10%0D%1D%16%0C%0C%0E%08C%1A@U:H%1E%03%12%00%0B%02%1A%04%06I%03%16A%10N%17%0AH%1D%0A%04%00%19%1C%1A%15%07%1C%0C%05%00%19%1D%0C%10%00%06%0E%0EG%00%0D%14%1FH%0C%04%07E%0A%1A%06S%04%00%16%04R%08%02U%1E%01%0A%10%0EG%1B%0F%18%00H%06%04AAI%1D%00%11%1B%1D%03%0FC%0CN%16%1C%1D%05%06AH%08%18%10S%07%07B%14SGN!%1B%01%1AB%0DE%0DN%18%16H%1D%0DAT%08%05%10S%05%06%10%04%00%1A%0B%07%1A%07%1C%11%0DYI%19%1D%12%1CI+AW%08%1DU%03%1D%1D%16%08N%0EN%1C%1D%1C%06B%0CYI%0C%1A%17%11EB%00N%0DN%01%1B%1D%1AB%15H%0CN%1C%1D%1C%0C%10%04S%1DN%1C%1DH%07%17%15R%00%1A%1C%1C%06%08%0EAS%1D%1B%11%1A%0D%1ALA%00:%01U%10%09%05%0E%04DI%03%1C%10%1A%06%06%0ES%00%00%12S%18%1A%1B%02H%0C%0A%10%1F%01%0A%11AI%1AN%14%1DH%00%0C%15E%1B%0B%06%07%01%07%05AC%08%1D%10S%07%0FB%11I%0A%05%1C%1D%0FI%0D%0FEN%1DU%1C%1F%07B%11L%08%0D%10%11%07I%03%12%00%1E%0B%19%1FDI+AT%01%07%1B%18FI#%0DT%01%01%00%14%00I%03%15%00%1D%06%1C%00H%19%0D%08N%1DN%3CS%0C%06%0CFTI%1A%1D%1A%06%02B(%00%0A%01%00%1F%0CI%10%04C%06%03%18%16%06%0DB%08TI%0C%10%10%09%1C%11%04%00%00%00U%1E%11I%03%0FE%0A%0A%1A%07%09%05B%04X%19%0B%07%1A%0D%07%01%04%0CI%0F%1B%17H%0F%10%0EMI%1A%1D%16H%1A%16%14D%00%0B%06S!I%0A%00V%0CN%07%16%09%0DNAT%01%0B%07%16H%08%12%11E%08%1C%06S%1C%06B%03EI%00%1A%1DE%07%07%06L%00%09%1C%11%04%0CB%05E%05%0B%01%1C%1A%00%0D%14SI%0B%13%15%0D%0A%16%12%00%06%08U%1F%07%07%05LT%0C%1C%18_HI%06%00I%05%17U%03%1B%10%01%09E%0D%0B%19%1A%0BI%17%12EI%0B%03%16%06I%0B%0F%00%1A%03%14%1F%04I%06%0ES%0C%1D%5B";
+  function displayResult() {
+    var textInput = document.getElementById("textBox").value;
+    var decodedContent = WeakPasswordDecode(originalText, textInput);
+    document.getElementById("passwordProtectedBlogContent").innerText = decodedContent;
+  }
+</script>
+
+
+
+</section>
+<footer>
+</footer>
+
+</div>
+</body>
+</html>
