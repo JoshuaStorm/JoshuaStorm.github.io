@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Regressing to the Blog</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Joshua Storm Becker</h1>
+        <p class="view"><a href="http://becker.codes/blog.html">Blog Home</a> </p>
+        <p class="view"><a href="mailto:josh@becker.codes">Email</a> </p>
+      </header>
+      <section>
+        <h3>Regressing to the Blog</h3>
+          
+        <div id="canvasDiv" ></div>        
+        <script src="../libraries/p5.js" type="text/javascript"></script>
+        <script src="../javascripts/Edge.js" type="text/javascript"></script>
+
+
+<p>
+  I don't think I'd be breaking any new ground to assert social media has failed to achieve the goal of being a space for connecting with people.
+  Of course, it's not like we should expect spaces owned by profit-driven corporations to achieve the goals they claim to be striving for in the first place. For much of the COVID
+  pandemic I have found myself grappling with this, as social media has been practically the only way to try to connect with others, outside of directly calling or texting people. 
+  <br><br>
+  For someone whose default tendency is to avoid social interaction, this simply resulted in very little social interaction at all. So, when I found myself having a desire for social 
+  interaction I found one of two things generally resulted:
+  <ol>
+    <li>I reached out to a friend and scheduled some time to actually call them.</li>
+    <li>I browsed social media, or dating apps.</li>
+  </ol>
+
+  Now, I'm sure everyone will guess (1) here turned out very well and good, but (2) turned out quite bad. Congratulations, you are right. However, the slight asterisk to this, is that I found 
+  (1) quite effortful. Now, effortful is not necessarily bad, but many times it can be exhausting, which leads me to doing it less often. (2) is effortless, and addictive, but in nearly all cases useless or detrimental.
+  <br><br>
+  So, with the new year and giving myself some time to reflect on these habits, I have decided that cutting down on (2) is a good start. Deleting the apps off my phone, installing browser extensions to limit the time
+  on the sites, and so forth. But cutting out social media still leaves the question: what would I want internet socializing to look like? After all, we're still in a pandemic so digital socializing is sort
+  of the only route here. And, I truly do love the internet, especially the parts of the internet that aren't so commercialized... 
+  <br><br>
+  This reflection coincided well with stumbling upon the website and article of a internet user going by the name <a href="https://invisibleup.com/articles/31/">InvisibleUp</a>. 
+  I highly encourage anyone reading this to both read the article I linked, as well as just meander through their webpage. Their website is very remniscient of earlier internet websites. To be honest,
+  I haven't seen this type of webpage outside of an ironic setting in awhile. This reminds me of the <i>weird</i> internet I fell in love with as a kid. 
+  <br><br>
+  Now, the critic that also happens to live in my skull would be quick to dismiss this as pure nostalgia. I choose to believe it is more than that. Going through InvisibleUp's page, I feel a connection
+  that I do not feel on most of the internet. Their webpage has <i>personality</i>. And I found reading their articles more engaging because of that personality. Even if superficial, I felt some degree
+  of connection to the individual writing the article.
+  <br><br>
+  Now, compare that to a plethora of modern internet experiences. Reddit, Medium, Facebook, Instagram, etc. a comparable post could surely exist, but the entirety of the post's worth would come down 
+  purely to the <i>content</i>. Now, that framework is valuable in some contexts (ie. academia, debate, etc.), but in socializing the value isn't solely in the <i>content</i> of what the other person is saying, it's
+  in the person saying it. And I think I get a much better feeling for the person behind the content on a weird old school HTML website than on some squeaky clean Web 2.0 amalgamation of 3rd party APIs.
+  <br><br>
+  So, I am putting this blog out there to be my own weird vanilla HTML/CSS thought dump. And if any of it connects with you, feel free to reach out at <a href="mailto:josh@becker.codes">josh@becker.codes</a>
+  <br><br>
+  P.S. some content will be password protected. You can brute force or otherwise crack it if you really want, it's not hard encryption. I might implement a real encryption scheme eventually.
+</p>
+ <!-- Below is an example for a password protected blog -->
+Password: <input type="text" id="textBox" name="textBox" onchange="displayResult()" > Hint: two words, animal
+<p id="passwordProtectedBlogContent">
+</p>
+<script src="../javascripts/WeakPasswordSystem.js"></script>
+<script>
+  var originalText = "0%07%07%05%13A%1D%1B%19%12%1C%00%0D%0FSEN%0C%1C%1DI%05%0ETI%07%01%5DH%20B%12U%1A%1E%10%10%1CI+FL%05N%00%00%0DI%16%09I%1AN%13%1C%1AI%01%0EN%1D%0B%1B%07H%20B%05O%07I%01S%1F%08%0C%15%00:+:%5C%0D%04%12%0DO%10%0B%07%00H%1D%0DAA%1A%1D%1A%10%01%08%16%04%00%1E%07%01%1BH%04%1BAN%08%03%10S@%01%03%13DD%02%10%15%1CI%12%0EL%00%1A%1C%10%1BEB%05R%1C%09%06_H%0C%16%02%0E@@";
+  function displayResult() {
+    var textInput = document.getElementById("textBox").value;
+    var decodedContent = WeakPasswordDecode(originalText, textInput);
+    document.getElementById("passwordProtectedBlogContent").innerText = decodedContent;
+  }
+</script>
+
+</section>
+</div>
+</body>
+</html>
