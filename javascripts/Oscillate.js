@@ -1,5 +1,6 @@
 function setup() {
-    var canvasWidth = displayWidth / 4;
+    let canvasDiv = document.getElementById("canvasDiv");
+    var canvasWidth = canvasDiv.clientWidth;
     var canvasHeight = displayHeight / 6;
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
