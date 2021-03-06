@@ -20,7 +20,6 @@
         <div id="canvasDiv"></div>        
         <script src="../libraries/p5.js" type="text/javascript"></script>
         <script src="../javascripts/YerDad.js" type="text/javascript"></script>
-<!-- XXX TODO: REMOVE COMMENTED PLAINTEXT BELOW -->
 
     Password: <input type="text" id="textBox" name="textBox" onchange="displayResult()">  Hint: I can't be bothered to think of another password
     <p id="passwordProtectedBlogContent1"></p>
@@ -31,18 +30,14 @@
       function displayResult() {
         var textInput = document.getElementById("textBox").value;
         var decodedContent1 = WeakPasswordDecode(originalText1, textInput);
-        document.getElementById("password1").innerHTML = decodedContent1;
+        document.getElementById("passwordProtectedContent").innerHTML = decodedContent1;
         var decodedTitle = WeakPasswordDecode(originalTitle1, textInput);
         document.getElementById("passwordProtectedTitle").innerHTML = decodedTitle;
         document.getElementsByTagName("title")[0].innerHTML = decodedTitle;
       }
     </script> 
 
-<p id="password1"></p>
-
-<p>
-</p>
-
+<p id="passwordProtectedContent"></p>
 
 </section>
 <footer>
